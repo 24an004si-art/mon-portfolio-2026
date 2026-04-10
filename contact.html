@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Mon portfolio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="titre-section">
+            <h1>Travaillons Ensemble</h1>
+            <div class="barre"></div>"q"
+            <p class="sous-titre">Vous avez un projet, une idée, ou vous cherchez un stagiaire motivé ? N'hésitez pas à me contacter.</p>
+        </section>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-container">
+                <h2>Mes Coordonnées</h2>
+                <p>Je suis généralement très réactif et je m'efforce de répondre à tous les messages dans un délai de 24 à 48 heures ouvrables.</p>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Localisation</h3>
+                        <p>Lubumbashi, République Démocratique du Congo</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Email</h3>
+                        <p>contact.rebecca@exemple.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Téléphone</h3>
+                        <p>+243 979239332</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Disponibilité</h3>
+                        <p>Lundi - Vendredi, 09h00 à 18h00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formulaire-container">
+                <h2>Envoyez-moi un message</h2>
+                <form action="#" method="POST" class="formulaire-contact">
+                    <div class="groupe-champs">
+                        <div class="champ">
+                            <label for="nom">Nom complet <span class="requis">*</span></label>
+                            <input type="text" id="nom" name="nom" placeholder="Rebecca Alubati" required>
+                        </div>
+                        <div class="champ">
+                            <label for="email">Adresse Email <span class="requis">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="re@exemple.com" required>
+                        </div>
+                    </div>
+
+                    <div class="champ">
+                        <label for="sujet">Sujet de votre message</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Proposition de projet, Offre de stage...">
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Votre Message <span class="requis">*</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin ou votre idée ici..." required></textarea>
+                    </div>
+
+                    <div class="champ-checkbox">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">J'accepte que mes données soient traitées pour me recontacter.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <section class="faq-section">
+            <div class="titre-section">
+                <h2>Foire Aux Questions</h2>
+                <div class="barre"></div>
+            </div>
+            
+            <div class="faq-accordeon">
+                <details class="faq-item">
+                    <summary>Êtes-vous actuellement disponible pour un stage ?</summary>
+                    <div class="faq-reponse">
+                        <p>Oui, en tant qu'étudiant en L2, je suis activement à la recherche d'une opportunité de stage pour mettre en pratique mes compétences en développement web et découvrir le monde professionnel de l'entreprise.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Quelles sont vos technologies de prédilection ?</summary>
+                    <div class="faq-reponse">
+                        <p>Je travaille principalement avec les technologies du web : HTML, CSS, JavaScript pour le front-end, et je développe une forte affinité pour Python et la découverte du framework Laravel pour le back-end.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Acceptez-vous des projets en freelance (indépendant) ?</summary>
+                    <div class="faq-reponse">
+                        <p>Absolument. Selon la complexité du projet et mon emploi du temps académique, je suis ouvert à la réalisation de sites web vitrines, de portfolios ou de petites applications web pour des clients de tous horizons.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 rebecca. Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
